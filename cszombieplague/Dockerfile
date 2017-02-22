@@ -20,5 +20,5 @@ COPY zp_resources/sound/warcraft3/ ./cstrike/sound/warcraft3/
 COPY zp_resources/sound/zombie_plague/ ./cstrike/sound/zombie_plague/
 COPY zp_resources/sprites/flame.spr ./cstrike/sprites/flame.spr
 
-CMD ./hlds_run -game cstrike -strictportbind +ip 0.0.0.0 -port 27013 +port 27003 +map de_dust -maxplayers 6
+CMD ./hlds_run -game cstrike -strictportbind +ip 0.0.0.0 -port 27013 +port 27003 +map de_dust -maxplayers 32
 #RUN ./hlds_run -console -game cstrike +port 27020 +de_dust2 +maxplayers 32 -pingboost 1

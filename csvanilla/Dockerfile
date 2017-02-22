@@ -13,5 +13,5 @@ RUN mkdir -p /root/.steam/sdk32/ && \
     cp cstrike/addons/metamod/dlls/metamod.so ~/.steam/sdk32/steamclient.so
 COPY liblist.gam ./cstrike
 
-CMD ./hlds_run -game cstrike -strictportbind +ip 0.0.0.0 -port 27015 +port 27005 +map de_dust -maxplayers 6
+CMD ./hlds_run -game cstrike -strictportbind +ip 0.0.0.0 -port 27015 +port 27005 +map de_dust -maxplayers 32
 #RUN ./hlds_run -console -game cstrike +port 27020 +de_dust2 +maxplayers 32 -pingboost 1

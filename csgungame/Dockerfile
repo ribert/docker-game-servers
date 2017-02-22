@@ -15,5 +15,5 @@ COPY maps/* cstrike/maps/
 COPY liblist.gam ./cstrike
 COPY gungame/sound/gungame/ cstrike/sounds/gungame/
 
-CMD ./hlds_run -game cstrike -strictportbind +ip 0.0.0.0 -port 27014 +port 27004 +map de_dust -maxplayers 6
+CMD ./hlds_run -game cstrike -strictportbind +ip 0.0.0.0 -port 27014 +port 27004 +map de_dust -maxplayers 32
 #RUN ./hlds_run -console -game cstrike +port 27020 +de_dust2 +maxplayers 32 -pingboost 1
