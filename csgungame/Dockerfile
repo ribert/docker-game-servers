@@ -11,6 +11,7 @@ COPY addons ./cstrike/addons
 COPY server.cfg ./cstrike/server.cfg
 RUN mkdir -p /root/.steam/sdk32/ && \
     cp cstrike/addons/metamod/dlls/metamod.so ~/.steam/sdk32/steamclient.so
+COPY maps/* cstrike/maps/
 COPY liblist.gam ./cstrike
 COPY gungame/sound/gungame/ cstrike/sounds/gungame/
 
